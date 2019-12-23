@@ -5,14 +5,22 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget{
   @override
  Widget build(BuildContext context) {
-     return MaterialApp(home: Text('Hello Wolrd',
-     style: TextStyle(fontSize: 30.5,
-     color: Colors.lightBlue[800])));
+     return MaterialApp(
+           
+                   theme: ThemeData( primarySwatch: Colors.blue,
+                   ),
+            home: Scaffold(
+          
+          appBar: AppBar(title: Text('WordPaire Generator'),
+  
+         )
+       )
+     );
   }
 }
 
 // import 'package:flutter/material.dart';
-
+ 
 // void main() => runApp(MyApp());
 
 // class MyApp extends StatelessWidget {
